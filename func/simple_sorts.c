@@ -6,7 +6,7 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 13:12:41 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 19:14:07 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/14 20:03:45 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,10 @@ void	sort_three(t_list **stack_a, t_list **stack_b)
 	if ((*stack_a)->index > (*stack_a)->next->index)
 	{
 		rotate(stack_a, stack_b, 1);
+		if ((*stack_a)->index > (*stack_a)->next->index)
+			swap(stack_a, stack_b, 1);
 	}
-	if ((*stack_a)->index > (*stack_a)->next->index)
+	if ((*stack_a)->next->index > (*stack_a)->next->next->index)
 	{
 		if ((*stack_a)->index > (*stack_a)->next->next->index)
 		{
@@ -60,7 +62,7 @@ void	simple_sorts(t_list **stack_a, t_list **stack_b, int stack_size)
 {
 	if (stack_size == 3 && (*stack_a)->number > (*stack_a)->next->number)
 	{
-		swap(stack_a, stack_b, 1);
+		rotate(stack_a, stack_b, 1);
 	}
 	else if (stack_size == 4)
 	{

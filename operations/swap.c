@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 19:42:21 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 18:46:48 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
 /*
-	Function: void swap(t_list **a, t_list **b, int type)
+	srcstion: void swap(t_list **a, t_list **b, int type)
 	-----------------------------------------------------
 	Swaps the values of the top two elements in the linked lists 'a' and/or 'b' 
 		based on the specified type.

@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 21:41:49 by johii             #+#    #+#             */
-/*   Updated: 2024/03/07 14:40:35 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
 /*
-	Function: void a_or_b(t_list **src_stack, t_list **dst_stack)
+	srcstion: void a_or_b(t_list **src_stack, t_list **dst_stack)
 	------------------------------------------------------------
 	Moves the top element from 'src_stack' to the top of 'dst_stack'.
  *

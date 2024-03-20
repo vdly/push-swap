@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 23:35:03 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 18:40:57 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 14:16:54 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
 /*
-	Function: void rotate(t_list **a, t_list **b, int type)
+	srcstion: void rotate(t_list **a, t_list **b, int type)
 	-------------------------------------------------------
 	Rotates the linked lists (stacks) 'a' and/or 'b' based on the 
 	specified type. (make first node to the last node and shift the rest up)
@@ -30,9 +30,9 @@ void	rotate(t_list **a, t_list **b, int type)
 	t_list		*temp_a;
 	t_list		*temp_b;
 
-	if (type == 2 && lst_size(*b) <= 1)
-		return ;
 	if (!a || !b || lst_size(*a) <= 1)
+		return ;
+	if (type == 2 && lst_size(*b) <= 1)
 		return ;
 	if (type == 1 || type == 3)
 	{

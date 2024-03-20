@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 21:27:33 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 18:40:48 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 18:50:44 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
 /*
-	Function: void rev_rotate(t_list **a, t_list **b, int type)
+	srcstion: void rev_rotate(t_list **a, t_list **b, int type)
 	-------------------------------------------------------
 	Reverse rotates the linked lists (stacks) 'a' and/or 'b' based on the 
 	specified type. (make last node to the firs node and shift the rest down)
@@ -30,19 +30,17 @@ void	rev_rotate(t_list **a, t_list **b, int type)
 	t_list		*temp_a;
 	t_list		*temp_b;
 
-	if (!a || !b)
-		return ;
-	if (type == 1 && lst_size(*a) <= 1)
+	if (!a || !b || lst_size(*a) <= 1)
 		return ;
 	if (type == 2 && lst_size(*b) <= 1)
 		return ;
-	if (type == 1 || (type == 3 && lst_size(*a) > 1))
+	if (type == 1 || type == 3)
 	{
 		temp_a = lst_last(*a);
 		temp_a->prev->next = NULL;
 		add_first(a, temp_a);
 	}
-	if (type == 2 || (type == 3 && lst_size(*b) > 1))
+	if (type == 2 || type == 3)
 	{
 		temp_b = lst_last(*b);
 		temp_b->prev->next = NULL;

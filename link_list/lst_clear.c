@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 20:41:21 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 15:14:52 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "link_list.h"
 
 /*
-	Function: void lst_clear(t_list **head)
+	srcstion: void lst_clear(t_list **head)
 	-----------------------------------------
 	Clears the entire linked list and sets the head pointer to NULL.
 

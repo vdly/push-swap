@@ -6,7 +6,7 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 19:04:55 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 19:16:15 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 19:24:49 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	if_type_rr(int type);
 // parsing
 int		check_alpha(char *str);
 int		duplicate(char **av, int i, int number);
-int		parse_check(char **str);
+int		error_check(char **str);
 
 // indexing
 int		get_min(t_list *stack);
@@ -54,23 +54,5 @@ void	sort_four(t_list **stack_a, t_list **stack_b);
 void	push_top(t_list **stack_a, t_list **stack_b, int size, int idx);
 void	sort_five(t_list **stack_a, t_list **stack_b);
 void	simple_sorts(t_list **stack_a, t_list **stack_b, int ac);
-
-/* operations for array
-
-void		swap(t_stack *stack, int type);
-
-static void	push(t_stack *stack, int type);
-static void	a_or_b(t_stack *stack, int type);
-static void	replace_num(t_stack *stack, int *temp, int type, int stack_size);
-
-void		rotate(t_stack *stack, int type);
-static void	shift_up(int *stack, int size);
-
-void		rev_rotate(t_stack *stack, int type);
-static void	shift_down(int *stack, int size);
-
-*/
-
-void	print_stack(t_list *temp);
 
 #endif

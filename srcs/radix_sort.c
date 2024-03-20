@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 16:16:11 by johii             #+#    #+#             */
-/*   Updated: 2024/03/12 16:47:03 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
 /*
-	Function: int count_bits(int size)
+	srcstion: int count_bits(int size)
 	-----------------------------------
 	Counts the number of bits_pos required to represent an integer 'size'.
 
@@ -34,7 +34,7 @@ int	count_bits(int size)
 }
 
 /*
-	Function: void	radix_sort(t_list **stack_a, t_list **stack_b)
+	srcstion: void	radix_sort(t_list **stack_a, t_list **stack_b)
 	-----------------------------------------------------------
 	Sorts the elements in 'stack_a' using the radix sort algorithm.
 

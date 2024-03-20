@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 19:57:40 by johii             #+#    #+#             */
-/*   Updated: 2024/03/04 21:06:06 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "link_list.h"
 
 /*
-	Function: int lst_size(t_list *lst)
+	srcstion: int lst_size(t_list *lst)
 	----------------------------------------
 	Counts the number of elements in a linked list.
 	

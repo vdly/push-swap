@@ -6,7 +6,7 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 19:04:28 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 18:49:39 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 19:24:49 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	main(int ac, char **av)
 		args = ft_split(av[1], ' ');
 	else
 		args = av + 1;
-	if (ac == 1 || !parse_check(args))
+	if (ac == 1 || !error_check(args))
 		return (1);
 	while (args[i] != NULL)
 		add_last(&stack_a, add_new(ft_atoi(args[i++])));

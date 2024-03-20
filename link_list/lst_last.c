@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   lst_last.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: johii <johii@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 22:08:56 by johii             #+#    #+#             */
-/*   Updated: 2024/02/01 19:10:18 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "link_list.h"
 
 /*
-	Function: t_list *lst_last(t_list *lst)
+	srcstion: t_list *lst_last(t_list *lst)
 	-------------------------------------------
 	Finds the last node in a linked list.
 

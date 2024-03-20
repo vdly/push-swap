@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 20:40:08 by johii             #+#    #+#             */
-/*   Updated: 2024/03/06 18:23:57 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "link_list.h"
 
 /*
-	Function: void add_front(t_list **head, t_list *new_node)
+	srcstion: void add_front(t_list **head, t_list *new_node)
 	-------------------------------------------------------
 	Adds a new_node node (`new_node`) to the front of a doubly linked 
 	list (`*head`).

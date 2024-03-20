@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 19:38:48 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 15:14:17 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "link_list.h"
 
 /*
-	Function: void add_back(t_list **head, t_list *new_node)
+	srcstion: void add_back(t_list **head, t_list *new_node)
 	-----------------------------------------------------------
 	Adds a new node to the end of a linked list.
 

@@ -6,13 +6,13 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 16:28:17 by johii             #+#    #+#             */
-/*   Updated: 2024/03/12 16:28:48 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 19:24:49 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int	parse_check(char **str)
+int	error_check(char **str)
 {
 	int			i;
 	long int	num;
@@ -79,5 +79,5 @@ int	duplicate(char **av, int i, int number)
 
 // String parsing is a process of breaking down a string into smaller 
 // components, such as words or phrases, to extract specific information.
-// In C programming, string parsing is done using functions that allow
+// In C programming, string parsing is done using srcstions that allow
 // you to search, extract, and manipulate strings.

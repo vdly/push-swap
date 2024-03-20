@@ -6,14 +6,14 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 20:35:00 by johii             #+#    #+#             */
-/*   Updated: 2024/03/13 18:48:16 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 19:43:09 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
 /*
-	Function: int get_min(t_list *stack)
+	int get_min(t_list *stack)
 	-------------------------------------
 	Finds the minimum value in the linked list.
 
@@ -41,10 +41,9 @@ int	get_min(t_list *stack)
 // number to min
 
 /*
-	Function: void indexing(t_list *stack)
+	void indexing(t_list *stack)
 	---------------------------------------
 	Assigns an index to each element in the linked list based on their values.
-	The element with the smallest value will have the highest index.
 
 	Parameters:
 	 - t_list *stack: A pointer to the head of the linked list.

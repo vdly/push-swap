@@ -6,7 +6,7 @@
 #    By: johii <johii@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/15 19:04:38 by johii             #+#    #+#              #
-#    Updated: 2024/03/13 14:47:32 by johii            ###   ########.fr        #
+#    Updated: 2024/03/15 19:27:31 by johii            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,14 +14,13 @@ NAME		:=	push_swap
 LIBFT		:=	$(wildcard libft/*.c)
 PRINTF		:=	$(wildcard libft/ft_printf/*.c)
 LINKLIST	:=	$(wildcard link_list/*.c)
-# GNL			=	get_next_line/*.c
 
 PS_SRCS		:=	push_swap.c \
-				func/index.c \
-				func/parse_check.c \
-				func/simple_sorts.c \
-				func/radix_sort.c \
-				func/utils.c \
+				srcs/index.c \
+				srcs/error_check.c \
+				srcs/simple_sorts.c \
+				srcs/radix_sort.c \
+				srcs/utils.c \
 				operations/push.c \
 				operations/rev_rotate.c \
 				operations/rotate.c \
@@ -55,6 +54,3 @@ fclean		:	clean
 re			:	fclean all
 
 .PHONY		:	all clean fclean re
-
-test:
-	echo $(ALL_OBJ)

@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   add_new.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: johii <johii@student.42kl.edu.my>          +#+  +:+       +#+        */
+/*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 19:02:29 by johii             #+#    #+#             */
-/*   Updated: 2024/02/18 17:46:26 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/15 13:22:55 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "link_list.h"
 
 /*
-	Function: t_list *new_node(int number)
+	srcstion: t_list *new_node(int number)
 	-----------------------------------------
 	Creates a new node for a doubly linked list, initializes its fields, 
 	and returns the new node.

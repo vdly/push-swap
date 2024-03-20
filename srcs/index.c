@@ -6,7 +6,7 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 20:35:00 by johii             #+#    #+#             */
-/*   Updated: 2024/03/15 19:43:09 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/20 17:16:48 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,8 @@ void	indexing(t_list *stack)
 		min = get_min(stack);
 		while (temp)
 		{
-			if (temp->number > min && temp->number < value)
+			if (temp->index == -1 && temp->number > min
+				&& temp->number <= value)
 				min = temp->number;
 			temp = temp->next;
 		}

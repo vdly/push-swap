@@ -6,7 +6,7 @@
 #    By: johii <johii@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/15 19:04:38 by johii             #+#    #+#              #
-#    Updated: 2024/03/15 19:27:31 by johii            ###   ########.fr        #
+#    Updated: 2024/03/20 18:24:54 by johii            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ PS_OBJ := $(patsubst %.c, %.o, $(PS_SRCS))
 ALL_OBJ		:=	$(LIBFT_OBJ) $(PRINTF_OBJ) $(LLIST_OBJ) $(PS_OBJ)
 
 CC			:=	cc
-CFLAGS		:=	-Wall -Wextra -Werror -fsanitize=address -g3
+CFLAGS		:=	-Wall -Wextra -Werror
 RM			:=	rm -rf
 
 all			:	$(NAME)
@@ -47,9 +47,10 @@ $(NAME)		:	$(ALL_OBJ)
 				$(CC) $(CFLAGS) $(ALL_OBJ) -o $(NAME)
 
 clean		:	
-			$(RM) $(ALL_OBJ) $(NAME)
+				$(RM) $(ALL_OBJ)
 
 fclean		:	clean
+				$(RM) $(NAME)
 
 re			:	fclean all
 

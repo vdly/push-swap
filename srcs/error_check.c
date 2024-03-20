@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parse_check.c                                      :+:      :+:    :+:   */
+/*   error_check.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/04 16:28:17 by johii             #+#    #+#             */
-/*   Updated: 2024/03/15 19:24:49 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/20 17:52:33 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,17 @@ int	error_check(char **str)
 	long int	num;
 
 	i = 0;
+	if (str[i] == NULL)
+		return (ft_putendl_fd("Error", 2), 0);
 	while (str[i])
 	{
 		num = ft_atol(str[i]);
 		if (!check_alpha(str[i]))
-		{
-			ft_putendl_fd("Error, non-digit", 2);
-			return (0);
-		}
+			return (ft_putendl_fd("Error", 2), 0);
 		if (!duplicate(str, i, num))
-		{
-			ft_putendl_fd("Error, found duplicates", 2);
-			return (0);
-		}
+			return (ft_putendl_fd("Error", 2), 0);
 		if (num < INT_MIN || num > INT_MAX)
-		{
-			ft_putendl_fd("Error, int overflow", 2);
-			return (0);
-		}
+			return (ft_putendl_fd("Error", 2), 0);
 		i++;
 	}
 	return (1);
@@ -49,7 +42,9 @@ int	check_alpha(char *str)
 
 	i = 0;
 	if (str[i] == '-' || str[i] == '+')
-		str++;
+		i++;
+	if (str[i] == '\0')
+		return (0);
 	while (str[i])
 	{
 		if (str[i] < '0' || str[i] > '9')
@@ -72,8 +67,8 @@ int	duplicate(char **av, int i, int number)
 	}
 	return (1);
 }
-// Return 1 if a duplicate is found
-// Return 0 if no duplicates are found
+// Return 0 if a duplicate is found
+// Return 1 if no duplicates are found
 
 // Understanding String Parsing in C Language 
 

@@ -6,7 +6,7 @@
 /*   By: johii <johii@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 13:12:41 by johii             #+#    #+#             */
-/*   Updated: 2024/03/14 20:03:45 by johii            ###   ########.fr       */
+/*   Updated: 2024/03/20 17:40:45 by johii            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	sort_four(t_list **stack_a, t_list **stack_b)
 {
 	if (sorted(*stack_a))
 		return ;
-	push_top(stack_a, stack_b, lst_size(*stack_a), 2);
+	push_top(stack_a, stack_b, lst_size(*stack_a), 1);
 	push(stack_a, stack_b, 1);
 	sort_three(stack_a, stack_b);
 	push(stack_a, stack_b, 2);
@@ -60,19 +60,19 @@ void	sort_five(t_list **stack_a, t_list **stack_b)
 
 void	simple_sorts(t_list **stack_a, t_list **stack_b, int stack_size)
 {
-	if (stack_size == 3 && (*stack_a)->number > (*stack_a)->next->number)
+	if (stack_size == 2 && (*stack_a)->number > (*stack_a)->next->number)
 	{
 		rotate(stack_a, stack_b, 1);
 	}
-	else if (stack_size == 4)
+	else if (stack_size == 3)
 	{
 		sort_three(stack_a, stack_b);
 	}
-	else if (stack_size == 5)
+	else if (stack_size == 4)
 	{
 		sort_four(stack_a, stack_b);
 	}
-	else if (stack_size == 6)
+	else if (stack_size == 5)
 	{
 		sort_five(stack_a, stack_b);
 	}
